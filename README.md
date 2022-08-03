@@ -1,1 +1,4 @@
-# Cuaderno intro-S2-2022
+# Cuaderno-S2-2022
+## Intro 
+
+Autor: Steven Vega
