@@ -1,4 +1,4 @@
 # Cuaderno-S2-2022
-## Intro 
+## Introducción a la programación
 
 Autor: Steven Vega
