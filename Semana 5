@@ -1,0 +1,105 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled5.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPhtb3MZxjT1lQ2FrCFJLYr",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/StevenVegaM/Cuaderno-S2-2022/blob/main/Semana%205\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "ZNrMKsjkWMuG"
+      },
+      "outputs": [],
+      "source": [
+        "#Semana 5"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##total de digitos divisibles\n",
+        "\n",
+        "\n",
+        "```\n",
+        "def totalDigitosDivisibles(num, div):\n",
+        "    contador = 0\n",
+        "    valor = 0\n",
+        "    if isinstance(num, int) and isinstance(div, int):\n",
+        "        if div > 0:\n",
+        "            while num > 0:\n",
+        "                valor = num % 10\n",
+        "                if num % div == 0:\n",
+        "                    contador += 1\n",
+        "                    num = num // 10\n",
+        "            return contador\n",
+        "    else:\n",
+        "        return \"Error: un parametro no es entero\"\n",
+        "```\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "JCrD75CkWRjR"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##total numeros primos\n",
+        "\n",
+        "\n",
+        "\n",
+        "```\n",
+        "def totalNumerosPrimos(num):\n",
+        "    digito = 2\n",
+        "    resultado = 0 \n",
+        "    if isinstance(num, int):\n",
+        "        if num > 1:\n",
+        "            while num != 1:\n",
+        "                if esPrimo(digito):\n",
+        "                    resultado += 1\n",
+        "                digito += 1\n",
+        "            return resultado\n",
+        "    else:\n",
+        "        return \"Error: el parametro num no es entero\"\n",
+        "```\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "eXii2k-iWdym"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##"
+      ],
+      "metadata": {
+        "id": "Yg9LYWjBZneR"
+      }
+    }
+  ]
+}
