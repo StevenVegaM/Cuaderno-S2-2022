@@ -5,7 +5,8 @@
     "colab": {
       "name": "Untitled5.ipynb",
       "provenance": [],
-      "authorship_tag": "ABX9TyPhtb3MZxjT1lQ2FrCFJLYr",
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyPkYImlXr3tj8BcdOKzkDuj",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -95,10 +96,75 @@
     {
       "cell_type": "markdown",
       "source": [
-        "##"
+        "##Sumatoria For\n",
+        "\n",
+        "\n",
+        "```\n",
+        "def sumatoriaFor(inicio, fin):\n",
+        "    resultado = 0\n",
+        "    if(inicio >= 0) and (fin >= 0) and (inicio <= fin):\n",
+        "        for numero in range(inicio, fin + 1):\n",
+        "             resultado += numero\n",
+        "             return resultado\n",
+        "```\n",
+        "\n"
       ],
       "metadata": {
         "id": "Yg9LYWjBZneR"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Multiplicar lista While\n",
+        "\n",
+        "\n",
+        "```\n",
+        "def multi(lista):\n",
+        "    res = 1 \n",
+        "    if isinstance(lista, list):\n",
+        "        return multi_While(lista, res)\n",
+        "    else:\n",
+        "        return \"Error, debe ser una lista\"\n",
+        "def multi_While(lista, res):\n",
+        "    while lista != []:\n",
+        "        if isinstance(lista[0], int) or isinstance(lista[0], float):\n",
+        "            res *= lista[0]\n",
+        "            lista = lista[1:]\n",
+        "        else:\n",
+        "            continue\n",
+        "    return res\n",
+        "```\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "oTu0uwMnQg0N"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##Multiplicar lista For\n",
+        "\n",
+        "\n",
+        "```\n",
+        "def multLista(lista):\n",
+        "    resultado = 1 \n",
+        "    if isinstance(lista, list):\n",
+        "        if lista != []:\n",
+        "            for digito in lista:\n",
+        "                resultado *= digito\n",
+        "            return resultado\n",
+        "        else:\n",
+        "            return \"Error, la lista esta vacia\"\n",
+        "    else:\n",
+        "        return \"Error, el valor ingresadso no es una lista\"\n",
+        "```\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "McEATdQ1RdYN"
       }
     }
   ]
