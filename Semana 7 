@@ -1,0 +1,109 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO9woQQi4F6G5Xv1Q9VaKLe",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/StevenVegaM/Cuaderno-S2-2022/blob/main/Semana%207%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "ychdHrynZTkO"
+      },
+      "outputs": [],
+      "source": [
+        "#Semana 7 - ejercicios con listas "
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##1 pares e impares\n",
+        "\n",
+        "\n",
+        "\n",
+        "```\n",
+        "def paresImpares(lista):\n",
+        "    pares = []\n",
+        "    impares = []\n",
+        "    for digito in lista:\n",
+        "        if digito % 2 == 0:\n",
+        "            pares += [digito]\n",
+        "        else:\n",
+        "            impares += [digito]\n",
+        "    return [pares] + [impares]\n",
+        "```\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "4vhEL0HNZYUA"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##2 eliminar elemento de una lista\n",
+        "\n",
+        "\n",
+        "```\n",
+        "\n",
+        "```\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "g35G1JsVZiKX"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##3 eliminar elementos de una lista \n",
+        "\n",
+        "\n",
+        "```\n",
+        "\n",
+        "def eliminarApariciones(lista, eliminar):\n",
+        "    respuesta = []\n",
+        "    if isinstance(lista, list):\n",
+        "        for digito in lista:\n",
+        "            if digito != eliminar:\n",
+        "                respuesta += [digito]\n",
+        "        return respuesta\n",
+        "```\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "3AEv2JNmZsXO"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "8fAVAGCEZp7i"
+      }
+    }
+  ]
+}
